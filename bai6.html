@@ -7,16 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Hiển thị từ 1-5 sử dụng vòng lặp</p>
-    <p type="text" id="iText"></p>
+    <p>Tìm 20 số đầu trong dãy Fibonacci</p>
     <script>
-        
-        let text="";
-        let i;
-        for (i=0;i<5;i++) {
-            text+='The number is ' + i + '<br>'
-        }
-        document.getElementById('iText').innerHTML = text;
+let a = 0;
+let b = 1;
+let c;
+for (let i=1; i<=20; i++) {
+    document.write(a+" ");
+    c = a + b;
+    a = b;
+    b = c;
+
+}
     </script>
 </body>
 </html>

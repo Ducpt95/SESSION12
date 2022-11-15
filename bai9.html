@@ -7,16 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Hiển thị từ 1-5 sử dụng vòng lặp</p>
-    <p type="text" id="iText"></p>
+    <p>Tìm 30 số đầu tiên trong dãy số tự nhiên chia hết cho 7</p>
     <script>
         
-        let text="";
-        let i;
-        for (i=0;i<5;i++) {
-            text+='The number is ' + i + '<br>'
+        let a;
+        for (a=1;a<=210;a++) {
+            if (a%7!=0) {
+                continue;
+            }
+            document.write(a + " ");
         }
-        document.getElementById('iText').innerHTML = text;
     </script>
 </body>
 </html>

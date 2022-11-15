@@ -7,16 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Hiển thị từ 1-5 sử dụng vòng lặp</p>
-    <p type="text" id="iText"></p>
+    <p>từ 1-99, đến 99 thì báo hoàn thành</p>
     <script>
         
-        let text="";
-        let i;
-        for (i=0;i<5;i++) {
-            text+='The number is ' + i + '<br>'
+        var i = 1;
+        while (i<100) {
+            document.write(i + "<br>")
+            i++
+            if (i==99) {
+                alert('Done')
+            }
         }
-        document.getElementById('iText').innerHTML = text;
     </script>
 </body>
 </html>

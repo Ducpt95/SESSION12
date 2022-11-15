@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <p>Game đoán số
+            Ứng dụng hiển thị cửa sổ prompt cho phép người dùng nhập vào muốn đoán trong
+khoảng nào
+● Ứng dụng chọn ra số ngẫu nhiên trong khoảng mà ngườI dùng chọn 
+● Ứng dụng hiển thị cửa số prompt cho người dùng nhập giá trị mà người dùng đoán 
+● Ứng dụng lấy kết quả và so sánh với giá trị ngẫu nhiên.
+o Nếu bằng thì hiển thị thông báo chúc mừng và kết thúc lượt chơi 
+o Nếu lớn hơn hoặc bé thua thì hiển thị thông báo lớn hơn hay bé thua và cho phép
+người dùng lựa chọn lại.
+        </p>
+        <hr>
+        <label>Khoảng giá trị của tôi là:</label><br><br>
+        <label>Từ</label>
+        <p id="myChoice1"></p>
+        <label>Đến</label>
+        <p id="myChoice2"></p>
+        <script>
+           
+          
+            var a = parseInt(prompt('Khoảng từ'));
+            var b = parseInt(prompt('đến'));
+            document.getElementById('myChoice1').innerHTML = a;
+            document.getElementById('myChoice2').innerHTML = b;
+            let c = Math.floor(Math.random()*((b-a)+1))+a;
+            document.write("Kết quả là "+c);
+            let d = parseInt(prompt('Số bạn dự đoán là số mấy?'));
+            if (c==d) {
+                alert('Chúc mừng bạn đã đoán đúng!');
+            } else {
+                alert('Bạn đã đoán sai')
+            }
+
+        </script>
+    </body>
+    </html>
+</body>
+</html>
